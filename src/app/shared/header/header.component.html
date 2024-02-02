@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="content-wrapper">
+    <div class="nav1">
+        <div class="nav1__left">
+            <img src="../../../../assets/images/linkedin.svg" class="nav1__left-img">
+            <img src="../../../../assets/images/facebook.svg" class="nav1__left-img">
+            <img src="../../../../assets/images/twitter.svg" class="nav1__left-img">
+            <img src="../../../../assets/images/instagram.svg" class="nav1__left-img">
+            <img src="../../../../assets/images/Ellipse 2.svg" class="nav1__left-img">
+            <img src="../../../../assets/images/Frame.svg" class="nav1__left-img" >
+            <h5 class="nav1__left-text">English</h5>
+        </div>
+        <div class="nav1__right">
+            <ul class="nav1__right__ul">
+                <li class="nav1__right__li"><span>Tableau Free Trail</span></li>
+                <li class="nav1__right__li"><span>Alteryx Free Trail</span></li>
+                <li class="nav1__right__li"><span>Aurex Free Trail</span></li>
+            </ul>
+
+            <app-button  class="nav1__right__btn"
+            [btnIcon]="'../../../../assets/icons/Group 13032.svg'" 
+            [btnText]="'Schedule a call'"
+            [style]="{'background-color':'#10385B','height':'29px'}"
+            (dynamicClickEvent)="handleDynamicClick()">
+            </app-button>
+
+            <img src="../../../../assets/images/kebab.png" class="nav1__kebab">
+        </div>
+    </div>
+</div>
+<div class="underline"></div>
+<div class="content-wrapper">
+    <div class="nav2">
+        <div class="nav2__left">
+            <img src="../../../../assets/images/logo.svg" alt="" class="nav2__left__logo">
+        </div>
+        <div class="nav2__right">
+            <ul class="nav2__right__ul">
+                <li>Services</li>
+                <li>Partners</li>
+                <li>Industries</li>
+                <li>Company</li>
+                <li>Events</li>
+                <li>Careers</li>
+                <li>Resources</li>
+                <li>Training</li>
+                <li>Contact us</li>
+            </ul>             
+            <img src="../../../assets/images/hamburger.svg" alt="" class="nav2__hamburger"> 
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
+

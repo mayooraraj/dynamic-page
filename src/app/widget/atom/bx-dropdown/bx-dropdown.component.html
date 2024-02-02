@@ -1,0 +1,8 @@
+<ng-container [formGroup]="parentForm">
+    <select [formControlName]="formControls" class="bx-dropdown"   [style.background-image]="'url(' + imageUrl + ')'"
+      [ngStyle]="customcountryStyle"
+      [ngClass]="{'invalid': parentForm.get(formControls)?.touched && parentForm.get(formControls)?.invalid}">
+        <option value=""  disabled selected hidden >{{name}}</option>
+        <option *ngFor="let option of options" [value]="option.value">{{ option.label }}</option>
+    </select>
+</ng-container>

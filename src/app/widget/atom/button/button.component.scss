@@ -1,0 +1,13 @@
+@import "/src/assets/variables/color.scss";
+.button{
+     border: none;
+     color: white;
+     font-size: 13px;
+     font-weight: bold;
+     &__left-icon{
+         margin-right: 10px;
+     }
+     &__right-icon{
+        margin-left: 10px;
+     }
+}

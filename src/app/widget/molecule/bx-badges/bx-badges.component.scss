@@ -1,0 +1,19 @@
+@import "/src/assets/variables/mixin.scss";
+.bx-badges{
+    display: flex;
+    gap: 10px;
+}
+
+@include mobile{
+    .bx-badges{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+// @include tablet{
+//     .bx-badges{
+
+//        flex-wrap: wrap;
+//     }
+// }  //kya

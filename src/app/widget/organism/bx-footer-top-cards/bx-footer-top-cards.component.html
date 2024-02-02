@@ -1,0 +1,47 @@
+<div class="bx-footer__cards">
+    <div class="bx-footer__cards__card">
+        <!-- <app-bx-footer-top  class="bx-footer__cards__after" *ngFor="let footercard of footercard"
+        [bxIcon]="footercard.bxIcon" [sectionTitle]="footercard.sectionTitle" [items]="footercard.items"
+        ></app-bx-footer-top>  -->
+
+        <app-bx-footer-top class="bx-footer__cards__after"
+        [class]="'bx-footer__card__list'"
+        [bxIcon] = "'../../../../assets/images/bxlogo.svg'"
+        [sectionTitle] = "''"
+        [items]="['About Beinex', 'Careers', 'Press Releases', '', 'Beinex in the News']"
+        ></app-bx-footer-top>
+
+        <app-bx-footer-top 
+        [class]="'bx-footer__card__list'"
+        [sectionTitle] ="'Our Services'"
+        [items] = "['Advanced Analytics', 'AI /ML/RPA', 'Alteryx APA', 'Audit Analytics' , 'Beinex Digital', 'Business Intelligence']"
+        ></app-bx-footer-top>
+
+        <app-bx-footer-top class="bx-footer__cards__after"
+        [class]="'bx-footer__card__list '"
+        [id]="'morebottom'"
+        [sectionTitle] = "''"
+        [items] = "['Competitive Intelligence', 'Modern Cloud Analytics', 'Risk Analytics', 'Tableau' , 'Tableau Support Services']" 
+        ></app-bx-footer-top>
+
+        <app-bx-footer-top class="bx-footer__cards__after"
+        [class]="'bx-footer__card__list'"
+        [sectionTitle] = "'Our Industries'"
+        [items] = "['Finance', 'Human Resources', 'Procurement', 'Sales']"
+        ></app-bx-footer-top>
+
+        <app-bx-footer-top
+        [class]="'bx-footer__card__list'"
+        [sectionTitle] ="'Our Partners'"
+        [items] = "['Tableau', 'Alteryx', 'AURAA', 'Amazon Web Services']"
+        ></app-bx-footer-top>
+
+        <app-bx-footer-top
+        [class]="'bx-footer__card__list'"
+        [id]="'morebottom'"
+        [sectionTitle] = "''"
+        [items] = "['Microsoft Azure', 'Snowflake', 'Salesforce', 'Alation']"
+        ></app-bx-footer-top> 
+    </div>
+</div>
+

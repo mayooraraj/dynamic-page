@@ -1,0 +1,13 @@
+<div class="bx-sec2-card" [style]="style">
+    <div class="bx-sec2-card__body">
+        <h4 class="bx-sec2-card__body__heading">{{ heading }}</h4>
+        <p class="bx-sec2-card__body__para" *ngIf="para">{{para}}</p>
+        <ul class="bx-sec2-card__ul">
+            <li *ngFor="let item of items" class="bx-sec2-card__li">
+                <img *ngIf="item.imageSrc" [src]="item.imageSrc" alt="{{ item.text }}" class="bx-sec2-card__icon">
+                {{ item.text }}
+                <img *ngIf="item.iconSrc" [src]="item.iconSrc" alt="{{ item.text }}" class="bx-sec2-card__arrow">
+              </li>
+        </ul>
+    </div>
+</div>

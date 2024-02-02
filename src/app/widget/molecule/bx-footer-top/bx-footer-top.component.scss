@@ -1,0 +1,35 @@
+@import "/src/assets/variables/mixin.scss";
+@import "/src/assets/variables/color.scss";
+@import "/src/assets/variables/fontstyle.scss";
+.bx-footer__card{
+    &__head{
+        @include navtext;
+        color:$white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    &__list{
+        @include navtext;
+        color: $white;
+        margin-top: 20px;
+       
+    }
+   
+    #morebottom{
+        margin-top: 38px;
+    }
+}
+
+
+@include tablet{
+    .bx-footer__card{
+        &__head{
+           font-size: 22px;
+           font-weight: 400;
+        }
+        &__list{
+            font-size: 18px;
+            font-weight: 400px;
+        }
+    }
+}

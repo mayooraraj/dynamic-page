@@ -1,0 +1,13 @@
+<app-header></app-header>
+<div *ngIf="formData$ | async as formData" class="display">
+    <p>Name : {{formData.name | titlecase}}</p>
+    <p>Company : {{formData.company | titlecase}}</p>
+    <p>Role : {{formData.role | titlecase}}</p>
+    <p>Ph No : {{formData.codes}} {{formData.phno | titlecase}}</p>
+    <p>Email ID : {{formData.email | titlecase}}</p>
+    <p>Country : {{formData.country}}</p>
+    <p>Message : {{formData.textarea | titlecase}}</p>
+    <p>Review : {{formData.message | titlecase}}</p>
+    <p>File : {{formData.file }}</p>
+  
+</div>

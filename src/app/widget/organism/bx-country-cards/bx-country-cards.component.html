@@ -1,0 +1,13 @@
+
+    <div class="bx-country">
+    <div class="bx-country__cards">
+        <app-country-card *ngFor="let country of countries" [imageSrc]="country.imageSrc" [heading]="country.heading"
+            [addressLines]="country.addressLines" [phone]="country.phone" [mobile]="country.mobile" [email]="country.email"
+        ></app-country-card>
+    </div>
+    <div class="bx-country__subscribe">
+    <app-bx-subscribe></app-bx-subscribe>
+    </div>
+    </div>
+
+    

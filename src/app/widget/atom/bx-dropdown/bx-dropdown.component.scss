@@ -1,0 +1,25 @@
+@import "/src/assets/variables/color.scss";
+@import "/src/assets/variables/mixin.scss";
+.bx-dropdown{
+    border: 1px solid $lite-hash;
+    font-size: 16px;
+    padding: 5px;
+    appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    color: gray;
+    margin-bottom: 20px;
+    width: 302px;
+    height: 35px;
+
+}
+.invalid{
+    border: 1px solid red;
+}
+
+@include tablet{
+   .bx-dropdown{
+        width: 370px;
+        height: 37px;
+   }
+}

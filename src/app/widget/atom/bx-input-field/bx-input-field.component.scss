@@ -1,0 +1,32 @@
+@import "/src/assets/variables/color.scss";
+@import "/src/assets/variables/mixin.scss";
+.bx-input-field{
+    width: 302px;
+    height: 35px;
+    border: 1px solid $lite-hash;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding: 10px;
+    margin-bottom: 20px; 
+    &--phone{
+        width: 232px;
+    }
+     
+}
+
+.invalid{
+    border: 1px solid red;
+}
+
+
+@include tablet{
+    .bx-input-field{
+        width: 370px;
+        height: 37px;
+        &--phone{
+            width: 300px;
+        }
+         
+       
+    }
+}

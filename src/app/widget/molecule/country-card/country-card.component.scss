@@ -1,0 +1,38 @@
+@import "/src/assets/variables/mixin.scss";
+.country-cards{
+    // margin-left: 50px;
+    &_card{
+        width:200px ;
+        height: 190px;
+        &_flag{
+            width: 50px;
+            height: 50px;
+        }
+        &_heading{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        &_para{
+            font-size: 14px;
+            color: #666666;
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+@include tablet{
+    .country-cards{
+        &_card{
+            width:250px ;
+            height: 220px;
+            &_heading{
+                font-size: 20px;
+            }
+            &_para{
+                font-size: 17px;
+            }
+        }
+}
+}

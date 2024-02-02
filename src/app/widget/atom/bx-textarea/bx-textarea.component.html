@@ -1,0 +1,9 @@
+<ng-container [formGroup]="parentForm">
+<textarea
+    class="bx-text-area"
+    [placeholder]="placeholder"
+    [formControlName]="formControls"
+    [style.background-image]="'url(' + imageUrl + ')'" 
+    [ngClass]="{'invalid': parentForm.get(formControls)?.touched && parentForm.get(formControls)?.invalid}"
+></textarea>
+</ng-container>

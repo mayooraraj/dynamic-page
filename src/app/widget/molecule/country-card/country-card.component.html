@@ -1,0 +1,16 @@
+<div class="country-cards">
+    <div class="country-cards_card">
+        <img [src]="imageSrc" class="country-cards_card_flag">
+        <h5 class="country-cards_card_heading">{{ heading }}</h5>
+        <p class="country-cards_card_para">
+            <ng-container *ngFor="let line of addressLines">
+                {{ line }} <br />
+            </ng-container>
+            <ng-container *ngIf="office">Office {{ office }} <br></ng-container>
+            <ng-container *ngIf="phone">Phone: {{ phone }}<br></ng-container>
+            <ng-container *ngIf="mobile">Mobile: {{ mobile }} <br></ng-container>
+            <ng-container *ngIf="email">Email: {{ email }}</ng-container>
+            
+        </p>
+    </div>
+</div>

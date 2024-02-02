@@ -1,0 +1,43 @@
+<form  [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+<div  class="bx-form">
+<div>
+    <app-bx-input-field [type]="'text'" [class]="'bx-input-field '" [placeholder]="'Name'" [imageUrl]="'../../../../assets/icons/name.svg'" [formControls]="'name'" [parentForm]="reactiveForm"></app-bx-input-field> 
+
+    <app-bx-input-field [type]="'email'" [class]="'bx-input-field '" [placeholder]="'Email ID'" [imageUrl]="'../../../../assets/icons/email.svg'" [formControls]="'email'" [parentForm]="reactiveForm" ></app-bx-input-field> 
+
+    <div class="d-flex ">
+        <app-bx-dropdown [name]="'Codes'" [customcountryStyle]="countryCodeStyle" [formControls]="'codes'" [parentForm]="reactiveForm" [options]="countryCodes"></app-bx-dropdown> 
+        <app-bx-input-field [type]="'text'" [class]="'bx-input-field bx-input-field--phone'" [placeholder]="'Phone Number'" [imageUrl]="'../../../../assets/icons/phone.svg'" [formControls]="'phno'" [parentForm]="reactiveForm" ></app-bx-input-field> 
+    </div>
+</div>
+<div>
+    <app-bx-input-field [type]="'text'" [class]="'bx-input-field '" [placeholder]="'Company'" [imageUrl]="'../../../../assets/icons/company.svg'" [formControls]="'company'" [parentForm]="reactiveForm" ></app-bx-input-field>
+
+    <app-bx-input-field [type]="'text'" [class]="'bx-input-field'" [placeholder]="'Job Role'" [imageUrl]="'../../../../assets/icons/job.svg'" [formControls]="'role'" [parentForm]="reactiveForm"  ></app-bx-input-field>
+
+    <app-bx-dropdown [name]="'Select Country'" [formControls]="'country'" [imageUrl]="'../../../../assets/icons/country.svg'" [parentForm]="reactiveForm" [options]="countryOptions"></app-bx-dropdown>
+
+</div>
+</div>
+<div >  
+    <app-bx-textarea [placeholder]="'Your Message for Us..'" [imageUrl]="'../../../../assets/icons/chat.svg'" [formControls]="'textarea'" [parentForm]="reactiveForm"></app-bx-textarea>
+    
+    <app-bx-label  [label]="'What are you looking for?'" [style]="{'margin-top':'20px','margin-bottom':'15px'}"></app-bx-label>
+
+    <app-bx-badges></app-bx-badges>
+   
+
+    <app-bx-label  [label]="'What you think we should know about you or your project:'" [style]="{'margin-top':'35px','margin-bottom':'10px'}"></app-bx-label>
+   
+    <app-bx-textarea [placeholder]="'Your text here'" [formControls]="'message'" [parentForm]="reactiveForm"></app-bx-textarea>
+    
+    <div class=" bx-form__upload ">
+         <app-bx-label  [label]="'Upload more info as a MS.Word or PDF file:'"[style]="{'width':'350px','margin-top':'24px'}" ></app-bx-label>
+
+         <app-bx-fileupload class="bx-form__upload__file" [name]="'inputFile'"  [fileInputLabel]="'Select File'"  [formControls]="'file'" [parentForm]="reactiveForm"></app-bx-fileupload>
+    </div>
+
+    <app-button [btnText]="'Submit'" [btnrightIcon]="'../../../../assets/icons/Group 7.svg'" [style]="{ 'width': '130px','background-color':'#10385B','height':'40px'}"></app-button>
+
+</div>  
+</form>

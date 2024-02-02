@@ -1,0 +1,50 @@
+@import "/src/assets/variables/mixin.scss";
+@import "/src/assets/variables/color.scss";
+@import "/src/assets/variables/fontstyle.scss";
+.bx-form{
+    display: flex;
+    gap: 20px;
+   
+    &__upload{
+        display: flex;
+       align-items: center;
+       margin-bottom: 18px;
+
+    }
+}
+
+
+@include mobile{
+    .bx-form{
+        flex-direction: column;
+        gap: 0px;
+        &__label{
+            margin-top: 20px;
+            width: 300px;
+           font-size: 14px;
+        }
+        &__upload{
+            flex-direction: column;
+            margin-bottom: 15px;
+           
+            // input {
+            //     margin-top: 10px;
+            // }
+        }
+    }
+}
+
+@include tablet{
+    .bx-form{
+        
+      //  flex-direction: column;
+        gap: 10px;
+        &__upload{
+           // flex-direction: column;  //kya
+            // margin-bottom: 15px;
+            margin-right: 500px; 
+          
+           
+        }
+    }
+}

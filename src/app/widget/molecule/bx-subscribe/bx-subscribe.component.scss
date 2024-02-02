@@ -1,0 +1,66 @@
+@import "/src/assets/variables/color.scss";
+@import "/src/assets/variables/fontstyle.scss";
+@import "/src/assets/variables/mixin.scss";
+.bx-subscribe{
+    display: flex;
+    background-color: $lite-blue;
+    width: 1100px;
+    height: 100px;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.06);
+    justify-content: space-evenly;
+    position: relative;
+    margin: auto;
+    &__heading{
+        color: $white;
+        font-family: $poppins;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 28px;
+        text-transform: capitalize;
+    }
+    &__para{
+        color:$white;
+        font-family: $poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+    &__email{
+        margin-top: 35px; 
+    }
+    &__textfield{
+        width: 302px;
+        height: 32px;
+        border: 1px solid $lite-hash; 
+    }
+
+}
+
+@include mobile{
+    .bx-subscribe{
+        flex-direction: column;
+        width: 305px;
+        height: 150px;
+        &__heading{
+            padding:5px 20px;
+        }
+        &__para{
+            padding:0px 20px;
+        }
+       
+        &__email{
+            margin-top: 10px; 
+        }
+        &__arrow{
+            display: none;
+        }
+}
+
+}
+
+@include tablet{
+    .bx-subscribe{
+        width: 900px;
+    
+}
+}
